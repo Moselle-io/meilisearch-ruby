@@ -236,7 +236,7 @@ module MeiliSearch
 
     ### FACET SEARCH
 
-    def facet_search(name, query = '', **options)
+    def facet_search(name, query = '', options = {})
       options.merge!(facet_name: name, facet_query: query)
       options = Utils.transform_attributes(options)
 
